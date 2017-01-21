@@ -1,10 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html ng-app='myFirstApp'>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="app.js"></script>
 <body>
 
-<h1>Yaduvendra Choubedqdey</h1>
+<div ng-controller="myFirstController">
 
-<p>My first parag,,dded,draph.</p>
+<p>Input something in the input box: {{name}}</p>
+<input type="text" ng-model="name">
+
+<input type="button" value="test me" ng-click="displayNumeric();">
+
+{{totalValue}}
+
+
+<input type="text" ng-model="item">
+<input type="button" value="test me now" ng-click="displayResult();">
+{{message}}
+
+
+</div>
 
 </body>
 </html>
